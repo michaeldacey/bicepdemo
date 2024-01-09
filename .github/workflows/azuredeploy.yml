@@ -1,5 +1,10 @@
 name: Azure Infrastructure Deployment Demo
 
+# Using workload identity federation to authenticate to Azure
+permissions:
+  id-token: write
+  contents: read
+
 on:
   workflow_dispatch:
 
